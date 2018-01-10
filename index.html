@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600" rel="stylesheet" type="text/css">
+        <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+        <link type="text/css" rel="stylesheet" href="style.css">
+        <title>Prediction App</title>
+    </head>
+    <body>
+        
+        <div class="top">
+            <div class="bscore">
+                <div class="bscore__title">
+                    Your Brier Score
+                </div>
+                
+                <div class="bscore__value"> 0.54</div>
+            </div>
+        </div>
+        
+        
+        
+        <div class="bottom">
+            <div class="add">
+                <div class="add__container">
+                    <select class="add__outcome">
+                        <option value= 1 selected>No outcome yet</option>
+                        <option value= 2 >Came true</option>
+                        <option value= 3>Didn't come true</option>
+                    </select>
+                    <input type="text" class="add__description" placeholder="Add Event">
+                    <input type="date" class="add__date" placeholder="Date of Event">
+                    <input type="number" min="0" max="100" class="add__probability" placeholder="Probability">
+                    <input type="text" class="add__reasoning" placeholder="Reasoning">
+                    <button class="add__btn"><i class="ion-ios-checkmark"></i></button>
+                </div>
+            </div>
+            
+            <div class="container clearfix">
+                <div class="predictions">
+                    <h2 class="predictions__title">Predictions</h2>
+                    
+                    <div class="predictions__list">
+                       
+                <!--        
+                        <div class="item clearfix" id="prediction-0">
+                            <div class="item__delete">
+                                    <button class="item__delete--btn"><i class="ion-ios-close-outline"></i></button>
+                                </div>
+                            <select class="item__outcome">
+                        <option value= 1 >No outcome yet</option>
+                        <option value= 2 >Came true</option>
+                        <option value= 3 >Didn't come true</option>
+                    </select>
+                        <input type="text" class="item__description" placeholder="Add Event">
+                        <input type="date" class="item__date" value="Date of Event">
+                        <input type="number" min="0" max="100" class="item__probability" placeholder="Probability">
+                        <input type="text" class="item__reasoning" placeholder="Reasoning">
+                            </div>
+                        
+                    
+                     <div class="item clearfix" id="prediction-1">
+                            <div class="item__delete">
+                                    <button class="item__delete--btn"><i class="ion-ios-close-outline"></i></button>
+                                </div>
+                            <select class="item__outcome">
+                        <option value= 1 >No outcome yet</option>
+                        <option value= 2 >Came true</option>
+                        <option value= 3 >Didn't come true</option>
+                    </select>
+                        <input type="text" class="item__description" placeholder="Add Event">
+                        <input type="date" class="item__date" value="Date of Event">
+                        <input type="number" min="0" max="100" class="item__probability" placeholder="Probability">
+                        <input type="text" class="item__reasoning" placeholder="Reasoning">
+                            </div>
+                
+                        -->
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+        
+        <script src="app.js"></script>
+    </body>
+</html>
